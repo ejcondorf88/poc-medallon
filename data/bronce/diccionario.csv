@@ -1,0 +1,42 @@
+﻿tabla,campo,tipo,descripcion
+tiendas,tienda_id,Texto,Identificador único del establecimiento.
+tiendas,nombre_tienda,Texto,Nombre comercial.
+tiendas,ciudad,Texto,Ciudad.
+tiendas,provincia,Texto,Provincia.
+tiendas,formato,Texto,Formato comercial.
+tiendas,fecha_apertura,Fecha,Fecha de apertura.
+tiendas,metros2,Numérico,Superficie aproximada.
+productos,producto_id,Texto,Identificador del producto.
+productos,sku,Texto,Código SKU.
+productos,producto,Texto,Descripción comercial.
+productos,categoria,Texto,Categoría.
+productos,subcategoria,Texto,Subcategoría.
+productos,marca,Texto,Marca.
+productos,proveedor,Texto,Proveedor principal.
+productos,costo_base,Decimal,Costo de referencia.
+productos,precio_lista,Decimal,Precio de lista.
+clientes,cliente_id,Texto,Identificador anonimizado.
+clientes,segmento,Texto,Segmento comercial.
+clientes,ciudad_residencia,Texto,Ciudad de residencia.
+clientes,anio_nacimiento,Entero,Año de nacimiento.
+clientes,fecha_alta,Fecha,Fecha de registro.
+clientes,canal_preferido,Texto,Canal preferido.
+promociones,promocion_id,Texto,Identificador de promoción.
+promociones,nombre_promocion,Texto,Nombre de campaña.
+promociones,fecha_inicio,Fecha,Inicio.
+promociones,fecha_fin,Fecha,Fin.
+promociones,tipo_promocion,Texto,Mecánica promocional.
+promociones,descuento_objetivo,Decimal,Descuento entre 0 y 1.
+promociones,categoria_objetivo,Texto,Categoría objetivo.
+ventas,venta_id,Texto,Identificador de línea transaccional.
+ventas,fecha_hora,Fecha-hora,Momento de la transacción.
+ventas,tienda_id,Texto,Código de tienda.
+ventas,cliente_id,Texto,Cliente cuando la compra fue identificada.
+ventas,producto_id,Texto,Producto.
+ventas,cantidad,Entero,Unidades; devoluciones con cantidad negativa.
+ventas,precio_unitario,Decimal,Precio antes de descuento.
+ventas,descuento_pct,Decimal,Descuento entre 0 y 1.
+ventas,costo_unitario,Decimal,Costo informado por el sistema de origen.
+ventas,promocion_id,Texto,Promoción cuando corresponde.
+ventas,medio_pago,Texto,Medio de pago informado por el POS.
+ventas,tipo_movimiento,Texto,Venta o devolución.

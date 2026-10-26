@@ -1,0 +1,145 @@
+﻿producto_id,sku,producto,categoria,subcategoria,marca,proveedor,costo_base,precio_lista
+P0001,SKU0001,Aceites Del Valle Tradicional Unidad,Abarrotes,Aceites,Del Valle,PRV028,4.53,7.23
+P0002,SKU0002,Aceites Sierra Azul Tradicional 500g,Abarrotes,Aceites,Sierra Azul,PRV025,3.89,6.22
+P0003,SKU0003,Conservas Costa Norte Clásico Unidad,Abarrotes,Conservas,Costa Norte,PRV034,3.03,4.79
+P0004,SKU0004,Conservas Natura Tradicional 250g,Abarrotes,Conservas,Natura,PRV020,4.32,6.07
+P0005,SKU0005,Aceites Viva Premium Unidad,Abarrotes,Aceites,Viva,PRV004,2.37,3.73
+P0006,SKU0006,Conservas Viva Premium 500g,Abarrotes,Conservas,Viva,PRV002,3.92,5.04
+P0007,SKU0007,Conservas Viva Clásico 2L,Abarrotes,Conservas,Viva,PRV021,4.19,6.42
+P0008,SKU0008,Arroz y granos BuenDía Tradicional 250g,Abarrotes,Arroz y granos,BuenDía,PRV032,4.88,7.37
+P0009,SKU0009,Arroz y granos Natura Clásico 2L,Abarrotes,Arroz y granos,Natura,PRV020,4.3,6.42
+P0010,SKU0010,Pastas Del Valle Tradicional 250g,Abarrotes,Pastas,Del Valle,PRV024,6.19,8.7
+P0011,SKU0011,Pastas Del Valle Tradicional Unidad,Abarrotes,Pastas,Del Valle,PRV033,3.71,4.83
+P0012,SKU0012,Aceites Andina Premium 1L,Abarrotes,Aceites,Andina,PRV002,0.83,1.24
+P0013,SKU0013,Aceites Costa Norte Tradicional Unidad,Abarrotes,Aceites,Costa Norte,PRV014,6.9,8.81
+P0014,SKU0014,Pastas Sierra Azul Tradicional 250g,Abarrotes,Pastas,Sierra Azul,PRV009,1.87,2.79
+P0015,SKU0015,Pastas Viva Premium 250g,Abarrotes,Pastas,Viva,PRV029,1.18,1.83
+P0016,SKU0016,Arroz y granos Sierra Azul Familiar 500g,Abarrotes,Arroz y granos,Sierra Azul,PRV003,3.75,5.1
+P0017,SKU0017,Café y té Casa Real Premium 500g,Bebidas,Café y té,Casa Real,PRV002,2.59,3.48
+P0018,SKU0018,Jugos La Hacienda Familiar 2L,Bebidas,Jugos,La Hacienda,PRV021,4.14,6.12
+P0019,SKU0019,Café y té BuenDía Premium 250g,Bebidas,Café y té,BuenDía,PRV014,4.04,6.07
+P0020,SKU0020,Gaseosas Viva Premium 250g,Bebidas,Gaseosas,Viva,PRV019,1.03,1.38
+P0021,SKU0021,Gaseosas Casa Real Clásico 2L,Bebidas,Gaseosas,Casa Real,PRV009,3.68,5.7
+P0022,SKU0022,Agua La Hacienda Premium 2L,Bebidas,Agua,La Hacienda,PRV035,5.38,6.93
+P0023,SKU0023,Café y té Casa Real Familiar 2L,Bebidas,Café y té,Casa Real,PRV017,4.12,5.26
+P0024,SKU0024,Jugos Andina Familiar 500g,Bebidas,Jugos,Andina,PRV007,0.84,1.36
+P0025,SKU0025,Agua Monteluz Clásico 500g,Bebidas,Agua,Monteluz,PRV006,4.84,6.59
+P0026,SKU0026,Gaseosas Viva Familiar 500g,Bebidas,Gaseosas,Viva,PRV029,3.4,4.52
+P0027,SKU0027,Gaseosas La Hacienda Tradicional Unidad,Bebidas,Gaseosas,La Hacienda,PRV015,2.77,4.33
+P0028,SKU0028,Jugos Costa Norte Tradicional 2L,Bebidas,Jugos,Costa Norte,PRV029,2.43,3.11
+P0029,SKU0029,Agua Sierra Azul Familiar 2L,Bebidas,Agua,Sierra Azul,PRV027,3.35,4.46
+P0030,SKU0030,Café y té Costa Norte Familiar 2L,Bebidas,Café y té,Costa Norte,PRV012,3.95,5.76
+P0031,SKU0031,Gaseosas BuenDía Clásico 500g,Bebidas,Gaseosas,BuenDía,PRV029,4.28,5.9
+P0032,SKU0032,Jugos Natura Clásico 2L,Bebidas,Jugos,Natura,PRV004,3.81,4.94
+P0033,SKU0033,Quesos Natura Clásico 250g,Lácteos,Quesos,Natura,PRV008,3.56,4.56
+P0034,SKU0034,Quesos Del Valle Clásico 500g,Lácteos,Quesos,Del Valle,PRV020,3.21,3.92
+P0035,SKU0035,Mantequilla Andina Clásico 1L,Lácteos,Mantequilla,Andina,PRV018,2.76,3.6
+P0036,SKU0036,Quesos Del Valle Premium 2L,Lácteos,Quesos,Del Valle,PRV019,5.18,6.84
+P0037,SKU0037,Mantequilla Costa Norte Clásico Unidad,Lácteos,Mantequilla,Costa Norte,PRV034,1.29,2.06
+P0038,SKU0038,Leche Del Valle Familiar 250g,Lácteos,Leche,Del Valle,PRV002,2.48,3.23
+P0039,SKU0039,Yogur Monteluz Tradicional 250g,Lácteos,Yogur,Monteluz,PRV004,1.39,2.08
+P0040,SKU0040,Mantequilla Andina Clásico Unidad,Lácteos,Mantequilla,Andina,PRV010,3.8,5.61
+P0041,SKU0041,Quesos Casa Real Clásico Unidad,Lácteos,Quesos,Casa Real,PRV031,1.94,2.91
+P0042,SKU0042,Quesos Sierra Azul Clásico 2L,Lácteos,Quesos,Sierra Azul,PRV025,1.35,1.7
+P0043,SKU0043,Leche Monteluz Clásico 250g,Lácteos,Leche,Monteluz,PRV019,2.59,3.89
+P0044,SKU0044,Mantequilla Andina Familiar 2L,Lácteos,Mantequilla,Andina,PRV010,4.58,5.77
+P0045,SKU0045,Mantequilla La Hacienda Clásico 250g,Lácteos,Mantequilla,La Hacienda,PRV013,5.25,6.92
+P0046,SKU0046,Quesos Andina Premium 250g,Lácteos,Quesos,Andina,PRV027,0.75,1.15
+P0047,SKU0047,Yogur Casa Real Clásico 1L,Lácteos,Yogur,Casa Real,PRV002,3.78,4.73
+P0048,SKU0048,Yogur Andina Tradicional 1L,Lácteos,Yogur,Andina,PRV021,1.86,2.27
+P0049,SKU0049,Lavavajillas Del Valle Familiar 2L,Limpieza,Lavavajillas,Del Valle,PRV028,7.1,9.03
+P0050,SKU0050,Papel Natura Tradicional Unidad,Limpieza,Papel,Natura,PRV033,3.28,4.92
+P0051,SKU0051,Lavavajillas Costa Norte Clásico 2L,Limpieza,Lavavajillas,Costa Norte,PRV012,3.4,4.16
+P0052,SKU0052,Detergentes Viva Tradicional Unidad,Limpieza,Detergentes,Viva,PRV012,10.27,14.13
+P0053,SKU0053,Detergentes Del Valle Clásico 500g,Limpieza,Detergentes,Del Valle,PRV027,9.68,14.34
+P0054,SKU0054,Desinfectantes Viva Clásico 1L,Limpieza,Desinfectantes,Viva,PRV001,5.51,8.44
+P0055,SKU0055,Desinfectantes BuenDía Familiar 250g,Limpieza,Desinfectantes,BuenDía,PRV018,5.89,7.93
+P0056,SKU0056,Papel Monteluz Familiar Unidad,Limpieza,Papel,Monteluz,PRV020,2.06,3.08
+P0057,SKU0057,Detergentes Casa Real Clásico Unidad,Limpieza,Detergentes,Casa Real,PRV021,7.03,10.41
+P0058,SKU0058,Lavavajillas BuenDía Familiar 250g,Limpieza,Lavavajillas,BuenDía,PRV035,6.12,7.7
+P0059,SKU0059,Detergentes Del Valle Clásico 2L,Limpieza,Detergentes,Del Valle,PRV019,2.91,4.52
+P0060,SKU0060,Papel Costa Norte Premium Unidad,Limpieza,Papel,Costa Norte,PRV024,2.81,3.8
+P0061,SKU0061,Desinfectantes Costa Norte Premium 2L,Limpieza,Desinfectantes,Costa Norte,PRV018,5.07,8.06
+P0062,SKU0062,Papel Casa Real Familiar 1L,Limpieza,Papel,Casa Real,PRV026,5.75,8.88
+P0063,SKU0063,Lavavajillas Casa Real Clásico Unidad,Limpieza,Lavavajillas,Casa Real,PRV005,9.98,12.38
+P0064,SKU0064,Papel Casa Real Premium 1L,Limpieza,Papel,Casa Real,PRV018,4.37,6.08
+P0065,SKU0065,Cuidado corporal Costa Norte Tradicional 500g,Cuidado personal,Cuidado corporal,Costa Norte,PRV029,6.97,9.85
+P0066,SKU0066,Cuidado corporal Sierra Azul Clásico 500g,Cuidado personal,Cuidado corporal,Sierra Azul,PRV033,2.95,4.3
+P0067,SKU0067,Higiene oral Andina Clásico 500g,Cuidado personal,Higiene oral,Andina,PRV003,10.04,12.35
+P0068,SKU0068,Afeitado BuenDía Familiar 500g,Cuidado personal,Afeitado,BuenDía,PRV018,6.73,9.19
+P0069,SKU0069,Cuidado corporal Viva Tradicional 250g,Cuidado personal,Cuidado corporal,Viva,PRV031,8.47,13.32
+P0070,SKU0070,Cabello Costa Norte Clásico 500g,Cuidado personal,Cabello,Costa Norte,PRV026,2.89,3.55
+P0071,SKU0071,Cuidado corporal Del Valle Tradicional 2L,Cuidado personal,Cuidado corporal,Del Valle,PRV019,5.07,6.25
+P0072,SKU0072,Higiene oral Natura Tradicional 1L,Cuidado personal,Higiene oral,Natura,PRV021,4.88,6.68
+P0073,SKU0073,Cabello BuenDía Premium 250g,Cuidado personal,Cabello,BuenDía,PRV021,10.48,16.02
+P0074,SKU0074,Higiene oral Costa Norte Premium 1L,Cuidado personal,Higiene oral,Costa Norte,PRV019,7.83,12.6
+P0075,SKU0075,Higiene oral Del Valle Tradicional 1L,Cuidado personal,Higiene oral,Del Valle,PRV015,3.09,3.96
+P0076,SKU0076,Higiene oral Casa Real Tradicional 2L,Cuidado personal,Higiene oral,Casa Real,PRV030,4.24,5.33
+P0077,SKU0077,Afeitado Del Valle Familiar Unidad,Cuidado personal,Afeitado,Del Valle,PRV007,8.25,10.21
+P0078,SKU0078,Cabello BuenDía Tradicional 1L,Cuidado personal,Cabello,BuenDía,PRV010,1.86,2.45
+P0079,SKU0079,Afeitado Del Valle Tradicional 1L,Cuidado personal,Afeitado,Del Valle,PRV022,10.43,14.47
+P0080,SKU0080,Afeitado Monteluz Familiar 1L,Cuidado personal,Afeitado,Monteluz,PRV015,8.0,11.54
+P0081,SKU0081,Frutos secos Viva Clásico 1L,Snacks,Frutos secos,Viva,PRV006,3.66,4.87
+P0082,SKU0082,Frutos secos Andina Tradicional 500g,Snacks,Frutos secos,Andina,PRV020,3.09,4.17
+P0083,SKU0083,Galletas Costa Norte Premium 250g,Snacks,Galletas,Costa Norte,PRV001,0.85,1.36
+P0084,SKU0084,Papas Andina Premium 2L,Snacks,Papas,Andina,PRV030,5.02,7.76
+P0085,SKU0085,Frutos secos Andina Premium 1L,Snacks,Frutos secos,Andina,PRV018,4.96,7.02
+P0086,SKU0086,Chocolates Viva Familiar Unidad,Snacks,Chocolates,Viva,PRV016,2.9,4.37
+P0087,SKU0087,Galletas BuenDía Premium Unidad,Snacks,Galletas,BuenDía,PRV034,3.23,4.43
+P0088,SKU0088,Papas Natura Familiar 2L,Snacks,Papas,Natura,PRV011,2.69,3.91
+P0089,SKU0089,Galletas La Hacienda Premium 500g,Snacks,Galletas,La Hacienda,PRV025,4.28,6.82
+P0090,SKU0090,Frutos secos Casa Real Clásico 2L,Snacks,Frutos secos,Casa Real,PRV024,1.81,2.73
+P0091,SKU0091,Galletas Casa Real Tradicional 500g,Snacks,Galletas,Casa Real,PRV005,0.54,0.69
+P0092,SKU0092,Frutos secos Del Valle Clásico Unidad,Snacks,Frutos secos,Del Valle,PRV010,4.33,6.39
+P0093,SKU0093,Frutos secos La Hacienda Tradicional 2L,Snacks,Frutos secos,La Hacienda,PRV022,4.64,6.98
+P0094,SKU0094,Frutos secos Monteluz Premium 2L,Snacks,Frutos secos,Monteluz,PRV009,4.85,7.13
+P0095,SKU0095,Frutos secos Casa Real Clásico 1L,Snacks,Frutos secos,Casa Real,PRV004,4.2,5.36
+P0096,SKU0096,Frutos secos Sierra Azul Tradicional 250g,Snacks,Frutos secos,Sierra Azul,PRV027,3.17,4.75
+P0097,SKU0097,Vegetales Natura Clásico 2L,Congelados,Vegetales,Natura,PRV034,10.25,15.14
+P0098,SKU0098,Comidas listas Andina Premium 2L,Congelados,Comidas listas,Andina,PRV005,4.0,6.01
+P0099,SKU0099,Helados Del Valle Familiar 250g,Congelados,Helados,Del Valle,PRV002,7.71,12.12
+P0100,SKU0100,Helados Casa Real Clásico Unidad,Congelados,Helados,Casa Real,PRV026,12.63,15.87
+P0101,SKU0101,Comidas listas Casa Real Tradicional 250g,Congelados,Comidas listas,Casa Real,PRV018,8.23,10.14
+P0102,SKU0102,Helados Sierra Azul Familiar 1L,Congelados,Helados,Sierra Azul,PRV009,13.75,16.93
+P0103,SKU0103,Comidas listas La Hacienda Tradicional 2L,Congelados,Comidas listas,La Hacienda,PRV023,7.94,9.78
+P0104,SKU0104,Vegetales BuenDía Premium 500g,Congelados,Vegetales,BuenDía,PRV006,6.71,8.92
+P0105,SKU0105,Comidas listas Viva Familiar 250g,Congelados,Comidas listas,Viva,PRV032,4.01,6.12
+P0106,SKU0106,Helados Casa Real Familiar 1L,Congelados,Helados,Casa Real,PRV001,8.43,12.24
+P0107,SKU0107,Helados La Hacienda Familiar 250g,Congelados,Helados,La Hacienda,PRV022,11.68,15.26
+P0108,SKU0108,Comidas listas Del Valle Familiar 1L,Congelados,Comidas listas,Del Valle,PRV009,2.36,3.44
+P0109,SKU0109,Carnes Viva Clásico Unidad,Congelados,Carnes,Viva,PRV024,8.71,10.74
+P0110,SKU0110,Carnes BuenDía Clásico 2L,Congelados,Carnes,BuenDía,PRV001,6.02,9.69
+P0111,SKU0111,Carnes Costa Norte Familiar Unidad,Congelados,Carnes,Costa Norte,PRV021,11.11,15.57
+P0112,SKU0112,Helados Monteluz Clásico 2L,Congelados,Helados,Monteluz,PRV004,9.79,14.64
+P0113,SKU0113,Pan Andina Tradicional 1L,Panadería,Pan,Andina,PRV013,5.44,7.49
+P0114,SKU0114,Tortillas Sierra Azul Clásico 500g,Panadería,Tortillas,Sierra Azul,PRV028,0.48,0.7
+P0115,SKU0115,Pastelería La Hacienda Clásico 1L,Panadería,Pastelería,La Hacienda,PRV024,3.28,5.2
+P0116,SKU0116,Pan Andina Familiar 500g,Panadería,Pan,Andina,PRV021,1.04,1.5
+P0117,SKU0117,Tortillas Sierra Azul Familiar 500g,Panadería,Tortillas,Sierra Azul,PRV028,1.86,2.47
+P0118,SKU0118,Pan Costa Norte Clásico 250g,Panadería,Pan,Costa Norte,PRV032,0.87,1.17
+P0119,SKU0119,Tortillas Costa Norte Clásico 500g,Panadería,Tortillas,Costa Norte,PRV032,4.97,7.84
+P0120,SKU0120,Pastelería Monteluz Premium 500g,Panadería,Pastelería,Monteluz,PRV016,4.77,6.35
+P0121,SKU0121,Tortillas Natura Clásico 1L,Panadería,Tortillas,Natura,PRV027,3.82,5.3
+P0122,SKU0122,Repostería La Hacienda Premium 1L,Panadería,Repostería,La Hacienda,PRV015,3.43,5.15
+P0123,SKU0123,Pastelería Andina Tradicional 1L,Panadería,Pastelería,Andina,PRV024,4.56,6.49
+P0124,SKU0124,Pan Del Valle Familiar 1L,Panadería,Pan,Del Valle,PRV019,4.17,5.56
+P0125,SKU0125,Repostería Monteluz Clásico 2L,Panadería,Repostería,Monteluz,PRV001,4.76,7.61
+P0126,SKU0126,Repostería Del Valle Tradicional 500g,Panadería,Repostería,Del Valle,PRV021,4.3,6.39
+P0127,SKU0127,Pastelería La Hacienda Familiar Unidad,Panadería,Pastelería,La Hacienda,PRV016,2.09,3.32
+P0128,SKU0128,Pan Viva Premium Unidad,Panadería,Pan,Viva,PRV006,1.88,2.37
+P0129,SKU0129,Almacenamiento Sierra Azul Premium 500g,Hogar,Almacenamiento,Sierra Azul,PRV022,5.15,7.41
+P0130,SKU0130,Cocina Monteluz Premium 500g,Hogar,Cocina,Monteluz,PRV033,10.85,13.5
+P0131,SKU0131,Cocina Costa Norte Tradicional 250g,Hogar,Cocina,Costa Norte,PRV003,8.04,10.27
+P0132,SKU0132,Almacenamiento Del Valle Tradicional Unidad,Hogar,Almacenamiento,Del Valle,PRV021,4.25,5.66
+P0133,SKU0133,Mascotas Del Valle Familiar 250g,Hogar,Mascotas,Del Valle,PRV024,1.7,2.41
+P0134,SKU0134,Almacenamiento Sierra Azul Tradicional 2L,Hogar,Almacenamiento,Sierra Azul,PRV017,2.33,2.91
+P0135,SKU0135,Almacenamiento Andina Familiar Unidad,Hogar,Almacenamiento,Andina,PRV033,6.3,7.9
+P0136,SKU0136,Almacenamiento Del Valle Familiar 2L,Hogar,Almacenamiento,Del Valle,PRV002,1.1,1.62
+P0137,SKU0137,Cocina Sierra Azul Familiar 500g,Hogar,Cocina,Sierra Azul,PRV029,4.21,6.6
+P0138,SKU0138,Almacenamiento La Hacienda Clásico 500g,Hogar,Almacenamiento,La Hacienda,PRV032,11.21,17.41
+P0139,SKU0139,Almacenamiento Del Valle Premium Unidad,Hogar,Almacenamiento,Del Valle,PRV034,7.54,9.66
+P0140,SKU0140,Desechables La Hacienda Clásico Unidad,Hogar,Desechables,La Hacienda,PRV023,2.87,3.83
+P0141,SKU0141,Mascotas La Hacienda Clásico 2L,Hogar,Mascotas,La Hacienda,PRV010,13.99,19.34
+P0142,SKU0142,Mascotas Natura Clásico 2L,Hogar,Mascotas,Natura,PRV010,9.89,15.29
+P0143,SKU0143,Almacenamiento BuenDía Familiar Unidad,Hogar,Almacenamiento,BuenDía,PRV003,9.93,12.25
+P0144,SKU0144,Desechables Natura Familiar 250g,Hogar,Desechables,Natura,PRV024,12.58,16.16

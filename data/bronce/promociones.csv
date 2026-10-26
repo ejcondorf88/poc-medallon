@@ -1,0 +1,21 @@
+﻿promocion_id,nombre_promocion,fecha_inicio,fecha_fin,tipo_promocion,descuento_objetivo,categoria_objetivo
+PR001,Campaña Hogar 01,2025-05-17,2025-05-31,2x1 parcial,0.25,Hogar
+PR002,Campaña Cuidado personal 02,2025-06-24,2025-07-15,Club clientes,0.2,Cuidado personal
+PR003,Campaña Cuidado personal 03,2025-06-03,2025-06-24,Descuento directo,0.1,Cuidado personal
+PR004,Campaña Bebidas 04,2025-04-14,2025-05-05,Club clientes,0.2,Bebidas
+PR005,Campaña Hogar 05,2025-09-16,2025-10-07,Club clientes,0.15,Hogar
+PR006,Campaña Bebidas 06,2026-02-05,2026-02-12,Fin de semana,0.25,Bebidas
+PR007,Campaña Congelados 07,2025-08-20,2025-08-30,2x1 parcial,0.1,Congelados
+PR008,Campaña Snacks 08,2026-01-15,2026-02-05,Fin de semana,0.2,Snacks
+PR009,Campaña Snacks 09,2025-06-30,2025-07-14,Club clientes,0.25,Snacks
+PR010,Campaña Congelados 10,2025-02-13,2025-02-23,2x1 parcial,0.15,Congelados
+PR011,Campaña Limpieza 11,2025-12-20,2025-12-30,Club clientes,0.05,Limpieza
+PR012,Campaña Bebidas 12,2025-09-01,2025-09-11,Club clientes,0.15,Bebidas
+PR013,Campaña Panadería 13,2025-08-09,2025-08-30,Club clientes,0.1,Panadería
+PR014,Campaña Bebidas 14,2025-07-01,2025-07-08,2x1 parcial,0.05,Bebidas
+PR015,Campaña Lácteos 15,2025-01-09,2025-01-19,Club clientes,0.15,Lácteos
+PR016,Campaña Lácteos 16,2026-04-17,2026-04-27,Fin de semana,0.1,Lácteos
+PR017,Campaña Panadería 17,2025-04-18,2025-04-25,2x1 parcial,0.2,Panadería
+PR018,Campaña Snacks 18,2026-02-21,2026-02-28,Descuento directo,0.25,Snacks
+PR019,Campaña Limpieza 19,2026-04-01,2026-04-22,2x1 parcial,0.25,Limpieza
+PR020,Campaña Hogar 20,2025-06-25,2025-07-05,Fin de semana,0.25,Hogar

@@ -1,0 +1,4 @@
+producto_id,sku,producto,categoria,subcategoria,marca,proveedor,costo_base,precio_lista
+P0145,SKU0145,Avena integral Andina 500g,Abarrotes,Arroz y granos,Andina,PRV012,2.35,3.49
+P0146,SKU0146,Agua mineral Sierra Azul 1.5L,Bebidas,Agua,Sierra Azul,PRV008,0.62,1.05
+P0147,SKU0147,Detergente liquido BuenDia 1L,Limpieza,Detergentes,BuenDia,PRV021,3.80,5.25

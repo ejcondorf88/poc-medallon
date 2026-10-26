@@ -1,0 +1,197 @@
+name: ETL Supermercados Andinos
+
+on:
+  push:
+    paths:
+      - 'data/bronce/**'
+      - 'andinos_etl/**'
+      - 'main.py'
+      - 'requirements.txt'
+      - 'tests/**'
+      - '.github/workflows/**'
+  pull_request:
+    paths:
+      - 'andinos_etl/**'
+      - 'main.py'
+      - 'requirements.txt'
+      - 'tests/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: andinos-etl-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Pruebas y comprobaciones estáticas
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Comprobaciones estáticas
+        run: python -m compileall -q andinos_etl main.py tests
+      - name: Suite de pruebas
+        run: python -m pytest -q
+
+  bronce:
+    name: 1. Bronce validado
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Validar y versionar Bronce
+        run: |
+          python main.py --stage bronce \
+            --bronze-dir data/bronce \
+            --output-dir artifacts/bronce
+      - name: Verificar integridad Bronce
+        run: python main.py --stage verificar --output-dir artifacts/bronce
+      - name: Resumen Bronce
+        run: |
+          echo '### Bronce validado' >> "$GITHUB_STEP_SUMMARY"
+          cat artifacts/bronce/manifest.json >> "$GITHUB_STEP_SUMMARY"
+      - name: Publicar artifact Bronce
+        uses: actions/upload-artifact@v4
+        with:
+          name: andinos-bronce-${{ github.run_id }}
+          path: artifacts/bronce/
+          if-no-files-found: error
+
+  plata:
+    name: 2. Plata limpia
+    needs: [test, bronce]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Descargar artifact Bronce
+        uses: actions/download-artifact@v4
+        with:
+          name: andinos-bronce-${{ github.run_id }}
+          path: artifacts/bronce
+      - name: Verificar integridad Bronce
+        run: python main.py --stage verificar --output-dir artifacts/bronce
+      - name: Limpiar capa Plata
+        run: |
+          python main.py --stage plata \
+            --bronze-dir artifacts/bronce \
+            --output-dir artifacts/plata
+      - name: Resumen Plata
+        run: |
+          echo '### Plata limpia' >> "$GITHUB_STEP_SUMMARY"
+          cat artifacts/plata/manifest.json >> "$GITHUB_STEP_SUMMARY"
+      - name: Publicar artifact Plata
+        uses: actions/upload-artifact@v4
+        with:
+          name: andinos-plata-${{ github.run_id }}
+          path: artifacts/plata/
+          if-no-files-found: error
+
+  oro:
+    name: 3. Oro aprobado
+    needs: [test, bronce, plata]
+    runs-on: ubuntu-latest
+    outputs:
+      quality_gate: ${{ steps.quality.outputs.quality_gate }}
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Descargar artifact Bronce
+        uses: actions/download-artifact@v4
+        with:
+          name: andinos-bronce-${{ github.run_id }}
+          path: artifacts/bronce
+      - name: Descargar artifact Plata
+        uses: actions/download-artifact@v4
+        with:
+          name: andinos-plata-${{ github.run_id }}
+          path: artifacts/plata
+      - name: Construir Oro y evaluar controles
+        id: quality
+        run: |
+          python main.py --stage oro \
+            --bronze-dir artifacts/bronce \
+            --plata-dir artifacts/plata \
+            --output-dir artifacts/gold
+          quality_gate=$(python -c 'import json; print(json.load(open("artifacts/gold/andinos-model-approved/gate.json", encoding="utf-8"))["status"])')
+          echo "quality_gate=$quality_gate" >> "$GITHUB_OUTPUT"
+      - name: Verificar artifact aprobado
+        run: python main.py --stage verificar --output-dir artifacts/gold/andinos-model-approved
+      - name: Resumen Oro
+        run: |
+          echo '### Oro aprobado' >> "$GITHUB_STEP_SUMMARY"
+          cat artifacts/gold/andinos-model-approved/manifest.json >> "$GITHUB_STEP_SUMMARY"
+      - name: Publicar artifact Oro aprobado
+        uses: actions/upload-artifact@v4
+        with:
+          name: andinos-model-approved-${{ github.run_id }}
+          path: artifacts/gold/andinos-model-approved/
+          if-no-files-found: error
+
+  publish:
+    name: 4. Publicar en SharePoint
+    needs: [test, bronce, plata, oro]
+    if: >
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/main' &&
+      needs.oro.result == 'success' &&
+      needs.oro.outputs.quality_gate == 'APPROVED' &&
+      vars.PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment: sharepoint-production
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Descargar artifact aprobado
+        uses: actions/download-artifact@v4
+        with:
+          name: andinos-model-approved-${{ github.run_id }}
+          path: andinos-model-approved
+      - name: Verificar gate, hashes y commit
+        run: |
+          python main.py --stage verificar --output-dir andinos-model-approved
+          python -c "import json, os; m=json.load(open('andinos-model-approved/manifest.json', encoding='utf-8')); assert m['git_commit'] == os.environ['GITHUB_SHA']"
+      - name: Publicar a SharePoint con Microsoft Graph
+        env:
+          SHAREPOINT_SITE_ID: ${{ vars.SHAREPOINT_SITE_ID }}
+          SHAREPOINT_FOLDER: ${{ vars.SHAREPOINT_FOLDER }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+        run: python -m andinos_etl.sharepoint andinos-model-approved

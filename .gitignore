@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Power BI Desktop: caches locales del proyecto (se regeneran al abrir en Desktop)
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Estado local de herramientas (no es código del proyecto)
+.engram/

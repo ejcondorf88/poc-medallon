@@ -1,0 +1,13 @@
+﻿tienda_id,nombre_tienda,ciudad,provincia,formato,fecha_apertura,metros2
+T001,Andinos El Bosque,Quito,Pichincha,Super,2014-05-15,2200
+T002,Andinos La Carolina,Quito,Pichincha,Express,2018-09-01,950
+T003,Andinos Quitumbe,Quito,Pichincha,Hiper,2012-03-20,4200
+T004,Andinos Valle,Quito,Pichincha,Super,2021-11-10,1800
+T005,Andinos Urdesa,Guayaquil,Guayas,Super,2015-07-04,2100
+T006,Andinos Alborada,Guayaquil,Guayas,Hiper,2010-02-18,4600
+T007,Andinos Ceibos,Guayaquil,Guayas,Super,2019-06-25,1900
+T008,Andinos Centro Sur,Guayaquil,Guayas,Express,2022-08-12,1100
+T009,Andinos El Vergel,Cuenca,Azuay,Super,2016-10-03,1700
+T010,Andinos Totoracocha,Cuenca,Azuay,Express,2020-01-15,1000
+T011,Andinos Barbasquillo,Manta,Manabí,Super,2017-12-08,1750
+T012,Andinos Tarqui,Manta,Manabí,Express,2023-04-22,900
